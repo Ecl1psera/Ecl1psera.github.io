@@ -1,0 +1,27 @@
+body{
+    background-color: #E0E0E0;
+}
+
+h1, p{
+    color: #557C99;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.social {
+    padding: 7px;
+    text-decoration: none;
+}
+
+.icon {
+    transition: transform .2s;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
