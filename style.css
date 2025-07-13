@@ -1,27 +1,70 @@
-body{
-    background-color: #E0E0E0;
+body {
+    background-color: #e0e0e0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
 }
 
-h1, p{
-    color: #557C99;
+.container {
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    gap: 60px;
 }
 
-.montserrat {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+.sidebar {
+    width: 300px;
+    position: sticky;
+    top: 50px;
 }
 
-.social {
-    padding: 7px;
-    text-decoration: none;
+.profile-pic {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+h1 {
+    color: #557c99;
+    font-weight: 600;
+}
+
+.pronouns {
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+.bio {
+    color: #557c99;
+    margin-top: 10px;
+}
+
+.socials {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
 }
 
 .icon {
-    transition: transform .2s;
+    height: 40px;
+    width: 40px;
+    transition: transform 0.2s;
 }
 
 .icon:hover {
     transform: scale(1.2);
+}
+
+.github {
+    filter: invert(5%) sepia(8%) saturate(253%) hue-rotate(314deg) brightness(96%) contrast(91%);
+}
+
+.bluesky {
+    filter: invert(36%) sepia(80%) saturate(2354%) hue-rotate(193deg) brightness(101%) contrast(103%);
+}
+
+.main-content {
+    flex-grow: 1;
+    border-left: 3px solid #557c99;
+    padding-left: 40px;
+    min-height: 500px;
 }
